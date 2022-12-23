@@ -85,6 +85,7 @@ fi
 FROM=`dirname "$0"`
 
 echo "\nPhase1: Terminate Utility"
+sudo mount -uw /
 kill_item "Wireless-AC Network Utility"
 kill_item "Wireless Network Utility"
 kill_item "TP-LINK Wireless Configuration Utility"
